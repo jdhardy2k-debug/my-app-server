@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 GEMINI_API_KEY = os.environ.get('GEMINI_API_KEY')
 PROXY_SHARED_SECRET = os.environ.get('PROXY_SHARED_SECRET')
-GEMINI_API_URL = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key={GEMINI_API_KEY}"
+GEMINI_API_URL = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key={GEMINI_API_KEY}"
 
 @app.route('/generate', methods=['POST'])
 def handle_generation():
