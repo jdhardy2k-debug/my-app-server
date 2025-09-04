@@ -32,4 +32,5 @@ def handle_generation():
 
 @app.route('/')
 def index():
+
     return "Proxy server is running."
